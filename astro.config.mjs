@@ -1,11 +1,9 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  // En local no hace falta tocar nada.
-  // Antes de publicar, sustituye USUARIO y NOMBRE_REPO por tus datos:
-  site: 'https://USUARIO.github.io/NOMBRE_REPO/',
-  // Descomenta esta línea con el nombre de tu repositorio
-  // (usa '/' si tu repositorio se llama USUARIO.github.io):
-  // base: '/NOMBRE_REPO',
+  // Usuario y repositorio: https://jose-luis-pereira-ferreras.github.io/Plantilla-Astro/
+  site: 'https://jose-luis-pereira-ferreras.github.io/Plantilla-Astro/',
+  // El repositorio no es USUARIO.github.io, así que la ruta base es /Plantilla-Astro:
+  base: '/Plantilla-Astro',
   trailingSlash: 'always',
 });
