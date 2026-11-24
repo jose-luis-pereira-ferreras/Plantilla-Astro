@@ -4,14 +4,19 @@ const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout
-  title="TODO: título SEO del artículo 1"
-  description="TODO: meta descripción del artículo 1."
+  title="Cómo crear tu primera página web con Astro | Nimbus Studio"
+  description="Guía práctica para instalar Astro y publicar tu primera página web."
 >
-  <h1>TODO: título del artículo 1</h1>
-  <p>TODO: texto breve relacionado con la temática de la web.</p>
+  <article class="articulo">
+    <h1>Cómo crear tu primera página web con Astro</h1>
+    <p>Instala Astro y publica tu primer sitio web con esta guía paso a paso.</p>
 
-  <h2>TODO: apartado del artículo</h2>
-  <p>TODO: amplía un poco el contenido.</p>
+    <h2>Primeros pasos con Astro</h2>
+    <p>
+      Descarga Node.js, ejecuta <code>npx astro create</code> y sigue las instrucciones
+      para tener tu primera página en pocos minutos.
+    </p>
 
-  <p><a href={`${base}blog/`}>Volver al blog</a></p>
+    <p><a href={`${base}blog/`}>Volver al blog</a></p>
+  </article>
 </BaseLayout>

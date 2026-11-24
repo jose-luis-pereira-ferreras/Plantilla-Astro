@@ -2,44 +2,144 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary: #1b3a57;
+  --accent: #3f7cac;
+  --text: #222;
+  --muted: #555;
+  --line: #e2e2e2;
+  --bg: #f4f6f8;
+}
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
   line-height: 1.6;
-  color: #222;
-  background: #f7f7f7;
+  color: var(--text);
+  background: var(--bg);
 }
 
+/* --- Cabecera y menú --- */
 header {
-  background: #1b3a57;
+  background: var(--primary);
   color: #fff;
-  padding: 1rem 1.5rem;
+  padding: 1.2rem 1.5rem;
 }
 
 .site-name {
-  margin: 0 0 0.4rem;
+  margin: 0 0 0.6rem;
   font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.3px;
 }
 
-nav a {
+header nav a {
   color: #fff;
-  margin-right: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin-right: 1.25rem;
+  display: inline-block;
 }
 
+header nav a:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+/* --- Main --- */
 main {
   max-width: 900px;
-  margin: 2rem auto;
+  margin: 2.5rem auto;
   padding: 0 1.5rem;
+}
+
+/* --- Tipografía --- */
+h1 {
+  font-size: 1.8rem;
+  margin: 0 0 0.75rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 2rem 0 0.75rem;
+}
+
+p {
+  margin: 0.7rem 0;
 }
 
 img {
   max-width: 100%;
   height: auto;
   border-radius: 6px;
+  display: block;
+  margin: 1rem auto;
 }
 
+/* --- Lista de servicios (página de inicio) --- */
+ul.servicios {
+  list-style: none;
+  padding: 0.2rem 0 0 0.5rem;
+  margin: 1rem 0 0;
+}
+
+ul.servicios li {
+  padding: 0.5rem 0 0.5rem 1rem;
+  border-left: 3px solid var(--accent);
+  margin-bottom: 0.5rem;
+  color: var(--muted);
+}
+
+/* --- Artículos --- */
+article.articulo {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin: 2rem 0;
+}
+
+article.articulo code {
+  background: #f0f0f0;
+  border-radius: 3px;
+  padding: 0.1em 0.3em;
+}
+
+/* --- Índice del blog --- */
+ul.blog-index {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.blog-index li {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+ul.blog-index li p {
+  margin: 0.3rem 0 0;
+  color: var(--muted);
+}
+
+ul.blog-index a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+ul.blog-index a:hover {
+  text-decoration: underline;
+}
+
+/* --- Pie --- */
 footer {
   text-align: center;
-  padding: 1.5rem;
-  color: #555;
+  padding: 2rem 1.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--line);
+}
+
+footer p.footer-text {
+  margin: 0;
 }
